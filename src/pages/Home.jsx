@@ -4,6 +4,9 @@ import React from 'react'
 function Home() {
   return (
     <div className='Wrapper'>
+        <div id='slack'>
+            VoN
+        </div>
         <div className='share'>
             <img src="/img/share-dsk.svg" alt="" className='share-desktop' />
             <img src="/img/share-mob.svg" alt="" className='share-mobile' />
