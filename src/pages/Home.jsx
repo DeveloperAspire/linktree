@@ -9,7 +9,8 @@ function Home() {
             <img src="/img/share-mob.svg" alt="" className='share-mobile' />
         </div>
         <div className='AviWrapper'>
-            <img src='/img/von.jpg' alt="" id='profile__img'/>
+            <img src='/img/von.jpg' alt="" id='profile__img' className='avi'/>
+            <img src="/img/hover-img.svg" alt="upload" className='upload' />
         </div>
 
         <h3 className='my-name'>VoN</h3>
