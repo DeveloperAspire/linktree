@@ -24,6 +24,29 @@ body {
   align-items: center;
 }
 
+.share {
+  position: absolute;
+  top: 1rem;
+  left: 70%;
+  border: 2px dotted #D0D5DD;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share:hover {
+  background: #F9FAFB;
+}
+
+.share-mobile {
+  display: none;
+}
+
 .AviWrapper {
   position: relative;
 }
@@ -97,35 +120,11 @@ a {
 }
 
 footer {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
   margin: 2rem 0;
-}
-
-.share {
-  position: absolute;
-  top: 1rem;
-  left: 70%;
-  border: 2px dotted #D0D5DD;
-  padding: 1rem;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.share:hover {
-  background: #F9FAFB;
-}
-
-.share-mobile {
-  display: none;
 }
 
 /* Slack Page */
