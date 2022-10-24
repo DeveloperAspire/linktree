@@ -13,7 +13,6 @@ body {
 }
 
 .Wrapper {
-  width: 800px;
   margin: 0 auto;
   position: relative;
 }
@@ -147,7 +146,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   footer {
     display: none;
   }
