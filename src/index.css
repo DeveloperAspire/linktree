@@ -1,13 +1,130 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.Wrapper {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Wrapper, .ButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AviWrapper img {
+  border-radius: 50%;
+  width: 88px;
+  margin: 3rem 0 1rem;
+  cursor: pointer;
+}
+
+.my-name {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+}
+
+.ButtonsWrapper {
+  width: 80%;
+  gap: 8px;
+}
+
+.ButtonsWrapper a {
+  text-align: center;
+  padding: 24px 32px;
+  color: #101828;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  }
+
+  .ButtonsWrapper a:hover {
+    background: #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: #101828;
+  }
+
+a {
+  display: inline-block;
+}
+
+.slack-git {
+  margin: 3rem 0 5rem;
+}
+
+.slack-git img {
+  margin-right: 1rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.share {
+  position: absolute;
+  top: 1rem;
+  left: 70%;
+  border: 2px dotted #D0D5DD;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share-mobile {
+  display: none;
+}
+
+/* Slack Page */
+
+#slack {
+  visibility: hidden;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+  .share-mobile {
+    display: block;
+  }
+
+  .share-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  footer {
+    display: none;
+  }
 }
