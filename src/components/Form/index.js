@@ -49,6 +49,11 @@ const Form = () => {
               onChange={Formik.handleChange}
               onBlur={Formik.handleBlur}
               value={Formik.values.first_name}
+              data-error-first_name={
+                Formik.touched.first_name && Formik.errors.first_name
+                  ? true
+                  : false
+              }
             />
             {Formik.touched.first_name && Formik.errors.first_name ? (
               <p className={classes.error}>{Formik.errors.first_name}</p>
@@ -66,6 +71,11 @@ const Form = () => {
               onChange={Formik.handleChange}
               onBlur={Formik.handleBlur}
               value={Formik.values.last_name}
+              data-error-last_name={
+                Formik.touched.last_name && Formik.errors.last_name
+                  ? true
+                  : false
+              }
             />
             {Formik.touched.last_name && Formik.errors.last_name ? (
               <p className={classes.error}>{Formik.errors.last_name}</p>
@@ -84,6 +94,9 @@ const Form = () => {
             onChange={Formik.handleChange}
             onBlur={Formik.handleBlur}
             value={Formik.values.email}
+            data-error-email={
+              Formik.touched.email && Formik.errors.email ? true : false
+            }
           />
           {Formik.touched.email && Formik.errors.email ? (
             <p className={classes.error}>{Formik.errors.email}</p>
@@ -101,6 +114,9 @@ const Form = () => {
             onChange={Formik.handleChange}
             onBlur={Formik.handleBlur}
             value={Formik.values.message}
+            data-error-message={
+              Formik.touched.message && Formik.errors.message ? true : false
+            }
           ></textarea>
           {Formik.touched.message && Formik.errors.message ? (
             <p className={classes.error}>{Formik.errors.message}</p>

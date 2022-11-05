@@ -47,20 +47,38 @@
   height: 44px;
 }
 
-.form-group .input:focus {
+.form-group input:focus {
   outline: none;
   border: 1px solid #84caff;
 }
 
+.form-group input[data-error-first_name="true"] {
+  border: 1px solid #f89687;
+}
+.form-group input[data-error-last_name="true"] {
+  border: 1px solid #f89687;
+}
+.form-group input[data-error-email="true"] {
+  border: 1px solid #f89687;
+}
+
 .form-group textarea:focus {
+  outline: none;
   border: 1px solid #84caff;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
   border-radius: 8px;
+}
+
+.form-group textarea[data-error-message="true"] {
+  border: 1px solid #f89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffd3cc;
 }
 .error {
   color: #f83f23;
   font-weight: 300;
   margin-top: 6px;
+  font-size: 14px;
+  font-family: inherit;
 }
 .submit {
   border: none;
