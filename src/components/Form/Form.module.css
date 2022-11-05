@@ -103,7 +103,8 @@
 }
 
 .checkbox input:checked ~ span {
-  background: #1570ef;
+  background: #fff;
+  border: 1px solid #1570ef;
 }
 
 .checkbox input:checked ~ span svg {
@@ -116,7 +117,7 @@
   border: 1px solid #d0d5dd;
   background-color: #fff;
   border-radius: 6px;
-  color: #fff;
+  color: #1570ef;
   transition: all 0.2s linear;
   position: absolute;
   top: 0;
