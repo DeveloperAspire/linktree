@@ -6,6 +6,12 @@
   padding: 2rem;
   color: #475467;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 24px;
+}
 .heading {
   font-weight: 600;
   font-size: 2rem;
@@ -29,7 +35,7 @@
   font-size: 14px;
 }
 .form-group .input {
-  width: 90%;
+  width: 100%;
   padding: 10px 14px;
   border: none;
   border: 1px solid #d0d5dd;

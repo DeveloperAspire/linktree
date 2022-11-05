@@ -43,39 +43,43 @@ const Form = () => {
         <p className={classes.desc}>
           Hi there, contact me to ask me about anything you have in mind.
         </p>
-        <div className={classes["form-group"]}>
-          <label htmlFor="first_name">First Name</label>
-          <input
-            className={classes.input}
-            type="text"
-            id="first_name"
-            name="first_name"
-            placeholder="Enter your first name"
-            onChange={Formik.handleChange}
-            onBlur={Formik.handleBlur}
-            value={Formik.values.first_name}
-          />
-          {Formik.touched.first_name && Formik.errors.first_name ? (
-            <p className={classes.error}>{Formik.errors.first_name}</p>
-          ) : null}
+        <div className={classes.grid}>
+          <div className={classes["form-group"]}>
+            <label htmlFor="first_name">First Name</label>
+            <input
+              className={classes.input}
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Enter your first name"
+              onChange={Formik.handleChange}
+              onBlur={Formik.handleBlur}
+              value={Formik.values.first_name}
+            />
+            {Formik.touched.first_name && Formik.errors.first_name ? (
+              <p className={classes.error}>{Formik.errors.first_name}</p>
+            ) : null}
+          </div>
+
+
+          <div className={classes["form-group"]}>
+            <label htmlFor="last_name">Last Name</label>
+            <input
+              className={classes.input}
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Enter your last name"
+              onChange={Formik.handleChange}
+              onBlur={Formik.handleBlur}
+              value={Formik.values.last_name}
+            />
+            {Formik.touched.last_name && Formik.errors.last_name ? (
+              <p className={classes.error}>{Formik.errors.last_name}</p>
+            ) : null}
+          </div>
         </div>
 
-        <div className={classes["form-group"]}>
-          <label htmlFor="last_name">Last Name</label>
-          <input
-            className={classes.input}
-            type="text"
-            id="last_name"
-            name="last_name"
-            placeholder="Enter your last name"
-            onChange={Formik.handleChange}
-            onBlur={Formik.handleBlur}
-            value={Formik.values.last_name}
-          />
-          {Formik.touched.last_name && Formik.errors.last_name ? (
-            <p className={classes.error}>{Formik.errors.last_name}</p>
-          ) : null}
-        </div>
         <div className={classes["form-group"]}>
           <label htmlFor="email">Email</label>
           <input
@@ -112,7 +116,12 @@ const Form = () => {
 
         <label className={classes.checkbox}>
           <input type="checkbox" id="agree" name="agree" required />
-          <span role="checkbox" aria-checked="false" aria-required className={classes.customcheckbox}>
+          <span
+            role="checkbox"
+            aria-checked="false"
+            aria-required
+            className={classes.customcheckbox}
+          >
             <svg
               fill="none"
               stroke="currentColor"
