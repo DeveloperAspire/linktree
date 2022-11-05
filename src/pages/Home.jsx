@@ -1,6 +1,7 @@
 import "../index.css";
 import React from "react";
 import links from "./data";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
             {link.anchor}
           </a>
         ))}
+        <Link to="/contact" id="contact">Contact Me</Link>
       </div>
 
       <div className="slack-git">
