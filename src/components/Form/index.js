@@ -95,7 +95,7 @@ const Form = () => {
             className={classes.input}
             type="text"
             id="message"
-            name="issue"
+            name="message"
             rows="10"
             placeholder="Send me a message and I'll reply you as soon as possible..."
             onChange={Formik.handleChange}
