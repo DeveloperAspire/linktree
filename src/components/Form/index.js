@@ -1,12 +1,8 @@
 import { useFormik } from "formik";
 import classes from "./Form.module.css";
-import { useState } from "react";
 import * as Yup from "yup";
 
 const Form = () => {
-  let milliseconds = Number(new Date());
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
   const initialValues = {
     first_name: "",
     last_name: "",
@@ -16,8 +12,6 @@ const Form = () => {
 
   const submitForm = (values) => {
     Formik.resetForm();
-
-    setIsSubmitted(true);
   };
 
   const Formik = useFormik({
@@ -60,7 +54,6 @@ const Form = () => {
               <p className={classes.error}>{Formik.errors.first_name}</p>
             ) : null}
           </div>
-
 
           <div className={classes["form-group"]}>
             <label htmlFor="last_name">Last Name</label>
